@@ -1,0 +1,44 @@
+<!-- about.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="include-html.js"></script>
+</head>
+<body>
+    <!-- Inclure le menu commun -->
+    <div include-html="menu.html"></div>
+
+    <header>
+        <h1>Mon Portfolio</h1>
+    </header>
+
+    <nav id="menu-section">
+        <ul>
+            <li id="menu-btn"><a href="menu.html">&#9665; Menu</a></li>
+        </ul>
+    </nav>
+
+
+    <section id="about">
+        <h2>À Propos de Moi</h2>
+        <p>
+            Bonjour ! Je suis Thomas Deceuninck, un passionné d'informatique et je vous souhaites la bienvenue sur ma page personnelle !
+        </p>
+        <p>Consultez mon <a href="./preuve.html?type=cvA">CV</a> pour plus d'informations détaillées.</p>
+    </section>
+
+
+<!--    <footer>
+        <a href="index.html">Retour aux Activités</a>
+    </footer> -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            includeHTML();
+        });
+    </script>
+</body>
+</html>

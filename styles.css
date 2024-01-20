@@ -1,0 +1,148 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #FFC0CB, #800080, #9933FF, #00FFFF, #FFDAB9, #FFD700);
+    background-size: 400% 400%;
+    animation: gradientAnimation 20s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+#menu-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#nav-section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#nav-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#nav-section li {
+    display: block;
+    margin-bottom: 10px; /* Ajoute un espace entre chaque li */
+}
+
+#nav-section li:hover {
+    text-decoration: underline; /* Souligner le lien au survol */
+    color: white; /* Couleur du texte au survol */
+    transition: text-decoration 0.3s ease, color 0.3s ease;  /* Ajouter une transition douce */
+}
+
+#menu-section li:hover {
+    text-decoration: underline; /* Souligner le lien au survol */
+    color: white; /* Couleur du texte au survol */
+    transition: text-decoration 0.3s ease, color 0.3s ease;  /* Ajouter une transition douce */
+}
+
+.nav-btn {
+    display: block; /* Affiche chaque li sur une nouvelle ligne */
+}
+
+#menu-btn a, .nav-btn a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    margin: 20px;
+}
+
+.activity, #about {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Styles pour la photo de profil */
+.my-photo {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    max-height: 180px;
+    border: 4px solid #fff;
+    border-radius: 8px;
+}
+
+/* Ajoutez ces styles pour le fond du tableau */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #f5f5f5; /* Couleur de fond légèrement plus clair */
+    border-radius: 8px; /* Coins arrondis du tableau */
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajustez l'épaisseur des bordures et les coins arrondis pour les cellules */
+th, td {
+    border: 4px solid #fff; /* Bordures de 4 pixels d'épaisseur, couleur blanche */
+    padding: 12px;
+    text-align: left;
+    border-radius: 6px; /* Coins arrondis des cellules */
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+tbody tr:hover {
+    background-color: #ccc; /* Couleur de fond gris clair au survol */
+    transition: background-color 0.3s ease;
+}
+
+
+/* Ajoutez ces styles pour les images de la classe preuve-img */
+.preuve-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    max-height: 600px; /* Hauteur maximale des images de la classe preuve-img */
+    border: 6px solid #666; /* Bordures grises foncées de 6 pixels d'épaisseur */
+    border-radius: 12px; /* Coins plus arrondis pour les images de la classe preuve-img */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
