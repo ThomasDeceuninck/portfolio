@@ -17,7 +17,7 @@
 
     <nav id="menu-section">
         <ul>
-            <li id="menu-btn"><a href="menu.html">&#9665; Retour</a></li>
+            <li id="menu-btn"><a href="menu.html" class="from">&#9665; Retour</a></li>
         </ul>
     </nav>
 
@@ -36,6 +36,12 @@
 
         const urlParams = new URLSearchParams(window.location.search);
         const imageType = urlParams.get('type');
+        const pageFrom = urlParams.get('from');
+
+        const resultFrom = document.querySelector('.from');
+        if (pageFrom === 'about') {
+            resultFrom.href = 'about.html';
+        } 
 
         // Sélectionner l'élément image et mettre à jour la source en fonction du paramètre
         const resultImg = document.querySelector('.preuve-img');
@@ -52,9 +58,7 @@
         } else if (imageType === 'mcg') {
             resultImg.src = 'mcg.PNG';
         } else if (imageType === 'cvA') {
-            resultImg.src = 'cv-1.png';
-        } else if (imageType === 'cvB') {
-            resultImg.src = 'cv-2.png';
+            resultImg.src = 'cv.png';
         } else if (imageType === 'certifOpenclassroom') {
             resultImg.src = 'screen_openclassroom.PNG';
         } else if (imageType === 'AD1') {
