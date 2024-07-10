@@ -17,7 +17,7 @@
 
     <nav id="menu-section">
         <ul>
-            <li id="menu-btn"><a href="menu.html" class="from">&#9665; Retour</a></li>
+            <li id="menu-btn"><a href="menu.html" class="fromClass">&#9665; Retour</a></li>
         </ul>
     </nav>
 
@@ -38,7 +38,7 @@
         const imageType = urlParams.get('type');
         const pageFrom = urlParams.get('from');
 
-        const resultFrom = document.querySelector('.from');
+        const resultFrom = document.querySelector('.fromClass');
         if (pageFrom === 'about') {
             resultFrom.href = 'about.html';
         } 
